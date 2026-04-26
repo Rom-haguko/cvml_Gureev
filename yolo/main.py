@@ -21,10 +21,6 @@ enabled = True
 while True:
     ok, frame = camera.read()
 
-    if not ok:
-        print("Не удалось получить кадр")
-        break
-
     key = cv2.waitKey(1) & 0xFF
 
     if key == ord("q"):
